@@ -147,6 +147,32 @@ body
     border-radius: 10px;
 }
 
+.carousel-indicators
+{
+    width: 15px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    transform: translate(430px,-50px);
+}
+.carousel-indicators .pointers
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width:10px;
+    height:10px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #4C4A4A;
+}
+.carousel-indicators .active
+{
+    height: 25px;
+    color: #2DA884;
+    background-color: #2DA884;
+    transition-duration: 2s; 
+}
 .middiv2 
 {
     padding-left: 100px;
