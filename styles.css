@@ -168,10 +168,11 @@ body
 }
 .carousel-indicators .active
 {
-    height: 25px;
+    padding-bottom: 15px;
     color: #2DA884;
     background-color: #2DA884;
-    transition-duration: 2s; 
+    transition: opacity 0.8s ease;
+    transition-property: unset;
 }
 .middiv2 
 {
