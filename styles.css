@@ -71,6 +71,7 @@ body
 .whoweare img
 {
     width: 100%;
+    height: 550px;
 }
 .whoweare .iotxt
 {
@@ -109,6 +110,11 @@ body
 .middiv1
 {
     border-radius: 10px;
+}
+
+.whatwedo
+{
+    padding-top: 60px;
 }
 .whatwedo .middiv1 .carousel-inner
 {
@@ -242,15 +248,15 @@ body
 
 .howwedo
 {
-   padding-bottom: 70px;
+    padding-top: 60px;
    display: flex;
    flex-direction: row;
    justify-content: center;
-
 }
 
 .whyus
 {
+    padding-top: 60px;
     padding-bottom: 100px;
 }
 
@@ -427,7 +433,7 @@ body
 
 .behindthescene
 {
-    padding-bottom: 100px;
+    padding-top: 60px;
 }
 
 .testimonial
@@ -451,22 +457,21 @@ body
 {
     width: 1240px;
     height: 412px;
-    background: radial-gradient(111.64% 115.32% at 116.43% 127.13%, rgba(255, 255, 255, 0.2) 0%, rgba(45, 168, 132, 0.2) 100%); 
-    box-shadow: -48px 120px 100px rgba(0, 0, 0, 0.08), inset 6px -6px 6px rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(15px);
-    border-radius: 10px; 
 }
 .testimonial .carousel
 {
     width: 1240px;
-    height: 412px;
+    height: 512px;
     border-radius: 10px;
 }
 .testimonial .carousel-inner
 {
     width: 1240px;
-    height: 412px;
-    
+    height: 512px;
+    /* background: linear-gradient(400px 400px at 0px bottom, rgba(255, 255, 255, 0.2) 0%, rgba(45, 168, 132, 0.2) 100%);  */
+    background: linear-gradient(0deg, rgba(31,213,164,0.60) 0%, rgba(253,229,45,0) 75%);
+    box-shadow: -48px 120px 100px rgba(0, 0, 0, 0.08), inset 6px -6px 6px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(15px);
 }
 .testimonial .carousel-item
 {
@@ -474,7 +479,7 @@ body
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-property:initial;
 }
 .testimonial .active
@@ -497,7 +502,7 @@ body
     font-size: 24px;
     line-height: 29px;
     color: #2DA884;
-    padding-top: 30px;
+    padding-top: 170px;
     padding-left: 50px;
 }
 .testimonial .info p
@@ -519,6 +524,7 @@ body
 
 .howtoreachus
 {
+    padding-top: 60px;
     padding-bottom: 75px;
     border-bottom: 1px solid #2DA884;
     
