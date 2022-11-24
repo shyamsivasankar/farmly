@@ -47,7 +47,7 @@
                             <a class="btn btn-primary btn-sm one" href="#How to reach us?"><p>CONTACT US</p></a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primary btn-sm one" href="#How to reach us?">BOOK A CALL</a>
+                            <a class="btn btn-primary btn-sm one" href="https://calendly.com/farmlysoftware" target="_blank">BOOK A CALL</a>
                         </li>
                     </ul>
                 </div>
@@ -103,7 +103,7 @@
             </div>
 
             <div class="middiv2">
-                <div id="demo2" class="carousel slide" data-bs-ride="false"> 
+                <div id="demo2" class="carousel slide" data-bs-ride="carousel"> 
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         - WHAT WE DO? 
@@ -340,28 +340,28 @@
                 <div class="heading">CONTACT-US</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="formbox">
-                    <form method="POST" id="contactusform" name="contactform" class="contform">
+                    <form id="contactusform" name="contactform" class="contform"  onsubmit="sendEmail(); reset(); return false">
                         
                         <div class="label">
                             <lable class="formlabel" for="name">Name</lable>
-                            <input type="text" class="form-control" name="name" id="name">
+                            <input type="text" class="form-control" name="name" id="name" required>
                         </div>
 
                         <div class="label">
                             <lable class="formlabel" for="email">Email Address</lable>
-                            <input type="text" class="form-control" name="email" id="email">
+                            <input type="text" class="form-control" name="email" id="email" required>
                         </div>
 
                         <div class="label">
                             <lable class="formlabel" for="pnum">Phone Number</lable>
-                            <input type="text" class="form-control" name="pnum" id="pnum">
+                            <input type="text" class="form-control" name="pnum" id="pnum" required>
                         </div>
 
                         <div class="label">
                             <lable class="formlabel" for="msg">Message</lable>
-                            <textarea rows=3 class="form-control" name="msg" id="msg"></textarea>
+                            <textarea rows=3 class="form-control" name="msg" id="msg" required></textarea>
                         </div>
-                        <input type="submit" value="SEND" class="send" onclick="sendEmail()">
+                        <button type="submit" value="SEND" class="send">SEND</button>
                     </form>
                 </div>
             </div>
@@ -372,7 +372,7 @@
                     <div class="textbac">
                         Take action now to stay compliant. Grow business without tension.
                     </div>
-                    <button>BOOK A CALL</button>
+                    <button onclick="window.open('https://calendly.com/farmlysoftware')">BOOK A CALL</button>
                 </div>    
             </div>
         </div>
@@ -417,13 +417,13 @@
             <div class="fothree">
                 <div class="middiv">
                     <div class="divi">
-                        <p><a href="Who we are?">Who we are ?</a></p>          
-                        <p><a href="What we do?">What we do ?</a></p>          
-                        <p><a href="How we do?">How we do ?</a></p>   
+                        <p><a href="#Who we are?">Who we are ?</a></p>          
+                        <p><a href="#What we do?">What we do ?</a></p>          
+                        <p><a href="#How we do?">How we do ?</a></p>   
                     </div>
                     <div class="divi">
-                        <p><a href="Why us?">Why us ?</a></p>          
-                        <p><a href="Behind the scene">Behind the scence</a></p>          
+                        <p><a href="#Why us?">Why us ?</a></p>          
+                        <p><a href="#Behind the scene">Behind the scence</a></p>          
                         <p><a href="#">About us</a></p>   
                     </div>
                 </div>
@@ -433,6 +433,10 @@
     </div>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+<script>
+    AOS.init();
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="animation.js"></script>
+<script src="contact.js"></script>
 </html>

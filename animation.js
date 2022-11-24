@@ -75,7 +75,6 @@ const prevCarouselBtn = document.querySelector('.carousel-control-prev');
 const nextCarouselBtn = document.querySelector('.carousel-control-next');
 
 // indicatorsAll.forEach( IndicatorBtn => IndicatorBtn.addEventListener("click", goToIndicatorCarousels));
-
 prevCarouselBtn.addEventListener('click', prevCarousels);
 nextCarouselBtn.addEventListener('click', nextCarousels);
 
@@ -85,11 +84,6 @@ nextCarouselBtn.addEventListener('click', nextCarousels);
 //   carouselOne.to(clickedIndicator);
 //   carouselTwo.to(clickedIndicator);
 // }
-
-myCarouselOne.addEventListener('slide.bs.carousel',function(e){
-  var bsCarousel=bootstrap.Carousel.getOrCreateInstance(myCarouselTwo)
-  bsCarousel.to(e.to)
-})
 
 function prevCarousels(){
   carouselOne.prev();
