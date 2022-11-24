@@ -16,7 +16,6 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <link href="contact.js" rel="script">
     <link rel="stylesheet" href="1.css">
     
 </head>
@@ -344,7 +343,7 @@
                 <div class="heading">CONTACT-US</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="formbox">
-                    <form method="POST" id="contactusform" name="contactform" class="contform"  onsubmit="sendEmail(); reset(); return false">
+                    <form id="contactusform" name="contactform" class="contform"  onsubmit="sendEmail(); reset(); return false">
                         
                         <div class="label">
                             <lable class="formlabel" for="name">Name</lable>
@@ -365,7 +364,7 @@
                             <lable class="formlabel" for="msg">Message</lable>
                             <textarea rows=3 class="form-control" name="msg" id="msg" required></textarea>
                         </div>
-                        <button type="submit" value="SEND" class="send">Send</button>
+                        <button type="submit" value="SEND" class="send">SEND</button>
                     </form>
                 </div>
             </div>
@@ -421,13 +420,13 @@
             <div class="fothree">
                 <div class="middiv">
                     <div class="divi">
-                        <p><a href="Who we are?">Who we are ?</a></p>          
-                        <p><a href="What we do?">What we do ?</a></p>          
-                        <p><a href="How we do?">How we do ?</a></p>   
+                        <p><a href="#Who we are?">Who we are ?</a></p>          
+                        <p><a href="#What we do?">What we do ?</a></p>          
+                        <p><a href="#How we do?">How we do ?</a></p>   
                     </div>
                     <div class="divi">
-                        <p><a href="Why us?">Why us ?</a></p>          
-                        <p><a href="Behind the scene">Behind the scence</a></p>          
+                        <p><a href="#Why us?">Why us ?</a></p>          
+                        <p><a href="#Behind the scene">Behind the scence</a></p>          
                         <p><a href="#">About us</a></p>   
                     </div>
                 </div>
@@ -441,4 +440,5 @@
     AOS.init();
 </script>
 <script src="animation.js"></script>
+<script src="contact.js"></script>
 </html>
