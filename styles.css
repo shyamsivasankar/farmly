@@ -685,6 +685,7 @@ body
     display: flex;
     flex-direction: row;
     justify-content: center;   
+    margin-bottom: 30px;
 }
 .footerone
 {
@@ -693,7 +694,7 @@ body
 
 .footertwo
 {
-    padding-right: 184px;
+    padding-right: 100px;
 }
 
 .ftthree
@@ -738,7 +739,7 @@ body
 
 .fotwo
 {
-    width: 304px;
+    width: 450px;
     height: 22px;
     border: 0px;
     border-bottom: 1px solid #2DA884;
@@ -747,8 +748,8 @@ body
 
 .divi 
 {
-    width: 156px;
-    height: 100spx;
+    width: 100px;
+    height: 100px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -757,6 +758,10 @@ body
     color: #12141D;
     opacity: 0.8;
     margin-right: 38px;
+}
+.dif
+{
+    width: 156px;
 }
 
 .ftthreebox
