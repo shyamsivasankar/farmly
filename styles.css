@@ -116,7 +116,10 @@ body
 {
     border-radius: 10px;
 }
-
+.whatwedo
+{
+    padding-bottom: 50px;
+}
 .whatwedo .middiv1 .carousel-inner
 {
     border-radius: 10px;
