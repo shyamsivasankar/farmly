@@ -452,22 +452,21 @@ body
 .testmiddiv
 {
     width: 1240px;
-    height: 412px;
-    background: radial-gradient(111.64% 115.32% at 116.43% 127.13%, rgba(255, 255, 255, 0.2) 0%, rgba(45, 168, 132, 0.2) 100%); 
-    box-shadow: -48px 120px 100px rgba(0, 0, 0, 0.08), inset 6px -6px 6px rgba(0, 0, 0, 0.08);
+    height: 550px;
+    background: linear-gradient(0deg, rgba(0,214,160,0.7) 0%, rgba(255,255,255,1) 65%);
     backdrop-filter: blur(15px);
     border-radius: 10px; 
 }
 .testimonial .carousel
 {
     width: 1240px;
-    height: 412px;
+    height: 550px;
     border-radius: 10px;
 }
 .testimonial .carousel-inner
 {
     width: 1240px;
-    height: 412px;
+    height: 550px;
     
 }
 .testimonial .carousel-item
@@ -493,6 +492,7 @@ body
 {
     width: 610px;
     height: 217px;
+    margin-top: 100px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
