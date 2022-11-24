@@ -25,6 +25,12 @@ body
 {
     margin-bottom: -8px;
 }
+.nav-item img
+{
+    width: 50px;
+    position: absolute;
+    left: 20px;
+}
 .navbar
 {
     background-color: #FFFFFF;
