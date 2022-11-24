@@ -238,11 +238,12 @@ body
 
 .whatwedo
 {
-    padding-bottom: 100px;
+    padding-top: 70px;
 }
 
 .howwedo
 {
+   padding-top: 70px;
    padding-bottom: 70px;
    display: flex;
    flex-direction: row;
@@ -252,7 +253,7 @@ body
 
 .whyus
 {
-    padding-bottom: 100px;
+    padding-top:70px;
 }
 
 .lean
@@ -428,12 +429,12 @@ body
 
 .behindthescene
 {
-    padding-bottom: 100px;
+    padding-top: 70px;
 }
 
 .testimonial
 {
-    padding-bottom: 100px;
+    padding-top: 70px;
     width: 100%;
     align-self: center;
     margin: auto;
@@ -520,7 +521,8 @@ body
 
 .howtoreachus
 {
-    padding-bottom: 75px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     border-bottom: 1px solid #2DA884;
     
 }
@@ -664,7 +666,6 @@ body
     height: 52.07px;
     background: #2DA884;
     border-radius: 17px;
-    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
