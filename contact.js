@@ -1,10 +1,10 @@
 function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "afiitjeeboy.zr@gmail.com",
-        Password : "11CE70875072F26FEB5D3FB06D9D8479A06B",
-        To : '20pd40c1@gmail.com',
-        From : document.getElementById("email").value,
+        Username : "contact@farmlysoftware.com",
+        Password : "372CD7FD01DD05C8384F065F12A847E8637B",
+        To : 'contact@farmlysoftware.com',
+        From : "contact@farmlysoftware.com",
         Subject : "Regarding farmly",
         Body : "Name: " + document.getElementById("name").value
             + "<br> Email: " + document.getElementById("email").value

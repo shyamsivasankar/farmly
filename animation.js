@@ -74,16 +74,8 @@ const carouselTwo = bootstrap.Carousel.getOrCreateInstance(myCarouselTwo);
 const prevCarouselBtn = document.querySelector('.carousel-control-prev');
 const nextCarouselBtn = document.querySelector('.carousel-control-next');
 
-// indicatorsAll.forEach( IndicatorBtn => IndicatorBtn.addEventListener("click", goToIndicatorCarousels));
 prevCarouselBtn.addEventListener('click', prevCarousels);
 nextCarouselBtn.addEventListener('click', nextCarousels);
-
-// Call the Bootstrap 'to' function for both Carousels to go to the indicator page that was clicked
-// function goToIndicatorCarousels (e){
-//   let clickedIndicator = e.target.attributes[1].value;
-//   carouselOne.to(clickedIndicator);
-//   carouselTwo.to(clickedIndicator);
-// }
 
 function prevCarousels(){
   carouselOne.prev();
@@ -95,6 +87,10 @@ function nextCarousels(){
   carouselTwo.next();
 }
 
+myCarouselOne.addEventListener('slide.bs.carousel', function(e) {
+  var bsCarouselB = bootstrap.Carousel.getInstance(myCarouselTwo)
+  bsCarouselB.to(e.to)
+})
 //******************************************************************************************************************************************/
 
 //how we do boxes

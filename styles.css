@@ -25,6 +25,12 @@ body
 {
     margin-bottom: -8px;
 }
+.nav-item img
+{
+    width: 50px;
+    position: absolute;
+    left: 20px;
+}
 .navbar
 {
     background-color: #FFFFFF;
@@ -110,7 +116,10 @@ body
 {
     border-radius: 10px;
 }
-
+.whatwedo
+{
+    padding-bottom: 50px;
+}
 .whatwedo .middiv1 .carousel-inner
 {
     border-radius: 10px;
@@ -238,11 +247,12 @@ body
 
 .whatwedo
 {
-    padding-bottom: 100px;
+    padding-top: 70px;
 }
 
 .howwedo
 {
+   padding-top: 70px;
    padding-bottom: 70px;
    display: flex;
    flex-direction: row;
@@ -252,7 +262,7 @@ body
 
 .whyus
 {
-    padding-bottom: 100px;
+    padding-top:70px;
 }
 
 .lean
@@ -293,6 +303,7 @@ body
 
 .rightone
 {
+    margin-top: 50px;
     padding-left: 100px;
     display: flex;
     flex-direction: row;
@@ -428,12 +439,12 @@ body
 
 .behindthescene
 {
-    padding-bottom: 100px;
+    padding-top: 70px;
 }
 
 .testimonial
 {
-    padding-bottom: 100px;
+    padding-top: 70px;
     width: 100%;
     align-self: center;
     margin: auto;
@@ -451,22 +462,21 @@ body
 .testmiddiv
 {
     width: 1240px;
-    height: 412px;
-    background: radial-gradient(111.64% 115.32% at 116.43% 127.13%, rgba(255, 255, 255, 0.2) 0%, rgba(45, 168, 132, 0.2) 100%); 
-    box-shadow: -48px 120px 100px rgba(0, 0, 0, 0.08), inset 6px -6px 6px rgba(0, 0, 0, 0.08);
+    height: 550px;
+    background: linear-gradient(0deg, rgba(0,214,160,0.7) 0%, rgba(255,255,255,1) 65%);
     backdrop-filter: blur(15px);
     border-radius: 10px; 
 }
 .testimonial .carousel
 {
     width: 1240px;
-    height: 412px;
+    height: 550px;
     border-radius: 10px;
 }
 .testimonial .carousel-inner
 {
     width: 1240px;
-    height: 412px;
+    height: 550px;
     
 }
 .testimonial .carousel-item
@@ -492,6 +502,7 @@ body
 {
     width: 610px;
     height: 217px;
+    margin-top: 100px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -520,7 +531,8 @@ body
 
 .howtoreachus
 {
-    padding-bottom: 75px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     border-bottom: 1px solid #2DA884;
     
 }
@@ -664,7 +676,6 @@ body
     height: 52.07px;
     background: #2DA884;
     border-radius: 17px;
-    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -684,6 +695,7 @@ body
     display: flex;
     flex-direction: row;
     justify-content: center;   
+    margin-bottom: 30px;
 }
 .footerone
 {
@@ -692,7 +704,7 @@ body
 
 .footertwo
 {
-    padding-right: 184px;
+    padding-right: 100px;
 }
 
 .ftthree
@@ -737,7 +749,7 @@ body
 
 .fotwo
 {
-    width: 304px;
+    width: 450px;
     height: 22px;
     border: 0px;
     border-bottom: 1px solid #2DA884;
@@ -746,8 +758,8 @@ body
 
 .divi 
 {
-    width: 156px;
-    height: 100spx;
+    width: 100px;
+    height: 100px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -756,6 +768,10 @@ body
     color: #12141D;
     opacity: 0.8;
     margin-right: 38px;
+}
+.dif
+{
+    width: 156px;
 }
 
 .ftthreebox
@@ -908,6 +924,12 @@ body
     }
   }
   
+  body::-webkit-scrollbar {
+    display: none;
+  }
   
   
-  
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+  }
