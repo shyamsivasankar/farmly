@@ -720,6 +720,7 @@ body
     font-size: 16px;
     line-height: 28px;
     color: #2DA884;
+    padding-top: 25px;
 }
 
 .foone
@@ -747,9 +748,8 @@ body
     flex-direction: row;
 }
 
-.fttwo img
-{
-    padding-left: 10px;
+.imgrest{
+    padding-left: 20px;
 }
 
 .fotwo
@@ -763,8 +763,8 @@ body
 
 .divi 
 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -773,10 +773,6 @@ body
     color: #12141D;
     opacity: 0.8;
     margin-right: 38px;
-}
-.dif
-{
-    width: 156px;
 }
 
 .ftthreebox
