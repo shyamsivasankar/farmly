@@ -14,3 +14,17 @@ function sendEmail(){
       message => alert("Mail has been sent successfully")
     );
 }
+
+function subscriptionEmail(){
+  Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "contact@farmlysoftware.com",
+      Password : "372CD7FD01DD05C8384F065F12A847E8637B",
+      To : 'contact@farmlysoftware.com',
+      From : "contact@farmlysoftware.com",
+      Subject : "Subscription to newsletter",
+      Body : "New Subscription: " + document.getElementById("subscriptionmail").value
+  }).then(
+    message => alert("Your have subscribed to our newsletter")
+  );
+}
