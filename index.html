@@ -406,10 +406,12 @@
             </div>
             <div class="ftthree">
                 <p>Subscribe to our newsletter</p>
-                <div class="ftthreebox">
-                    <input type="text" class="form-control" placeholder="Loremipsum@example.com">
-                    <button>SUBSCRIBE</button>
-                </div>
+                <form id="subscriptionform"  name="subsform" class="subsform"  onsubmit="subscriptionEmail(); reset(); return false">
+                    <div class="ftthreebox">
+                        <input id="subscriptionmail" type="text" class="form-control" placeholder="Loremipsum@example.com">
+                        <button type="submit" value="SEND" class="subscription">SUBSCRIBE</button>
+                    </div>
+                </form>
             </div>
             <div class="ftfour">
             </div>
