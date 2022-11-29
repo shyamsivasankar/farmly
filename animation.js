@@ -65,10 +65,7 @@ e.addEventListener("mouseout",(event)=>{five.style.borderBottomColor="white";});
 //Double Carousel Work
 //******************************************************************************************************************************************/
 
-
-const myCarouselOne = document.querySelector('#demo')
 const myCarouselTwo = document.querySelector('#demo2')
-const carouselOne = bootstrap.Carousel.getOrCreateInstance(myCarouselOne);
 const carouselTwo = bootstrap.Carousel.getOrCreateInstance(myCarouselTwo);
 
 const prevCarouselBtn = document.querySelector('.carousel-control-prev');
@@ -78,19 +75,17 @@ prevCarouselBtn.addEventListener('click', prevCarousels);
 nextCarouselBtn.addEventListener('click', nextCarousels);
 
 function prevCarousels(){
-  carouselOne.prev();
   carouselTwo.prev();
 }
 
 function nextCarousels(){
-  carouselOne.next();
   carouselTwo.next();
 }
 
-myCarouselOne.addEventListener('slide.bs.carousel', function(e) {
-  var bsCarouselB = bootstrap.Carousel.getInstance(myCarouselTwo)
-  bsCarouselB.to(e.to)
-})
+// myCarouselOne.addEventListener('slide.bs.carousel', function(e) {
+//   var bsCarouselB = bootstrap.Carousel.getInstance(myCarouselTwo)
+//   bsCarouselB.to(e.to)
+// })
 //******************************************************************************************************************************************/
 
 //how we do boxes
@@ -161,41 +156,21 @@ txtbox[3].addEventListener("click",(event)=>{txtbox[3].style.boxShadow="none",tx
 
 //icons in why us
 //******************************************************************************************************************************************/
-const icons=[];
-icons[0]=document.getElementById("i1");
-icons[1]=document.getElementById("i2");
-icons[2]=document.getElementById("i3");
-icons[3]=document.getElementById("i4");
-icons[4]=document.getElementById("i5");
-icons[5]=document.getElementById("i6");
+var icon=document.querySelectorAll(".icon");
+var icondata=document.querySelectorAll(".icondata");
+for(let i=0;i<6;i++)
+{
+  for(let j=0;j<6;j++)
+  {
+    icon[i].addEventListener("mouseenter",(event)=>{icondata[j].style.animationPlayState="paused";});
+    icon[i].addEventListener("mouseover",(event)=>{icondata[j].style.animationPlayState="paused";});
+    icon[i].addEventListener("mouseout",(event)=>{icondata[j].style.animationPlayState="running";});
 
-// const boxed=documnet.getElementById("iconbox");
-const boxed=document.querySelector('#iconbox');
-
-icons[0].addEventListener("mouseenter",(event)=>{boxed.style.background="radial-gradient(500px 500px at 500px bottom,rgba(0, 255, 148,0.2),white)";});
-icons[0].addEventListener("mouseover",(event)=>{boxed.style.background="radial-gradient(500px 500px at 500px bottom,rgba(0, 255, 148,0.2),white)";});
-icons[0].addEventListener("mouseout",(event)=>{boxed.style.background="white";});
-
-icons[1].addEventListener("mouseenter",(event)=>{boxed.style.background="radial-gradient(500px 500px at 500px top,rgba(0, 255, 148, 0.2),white)";});
-icons[1].addEventListener("mouseover",(event)=>{boxed.style.background="radial-gradient(500px 500px at 500px top,rgba(0, 255, 148, 0.2),white)";});
-icons[1].addEventListener("mouseout",(event)=>{boxed.style.background="white";});
-
-icons[2].addEventListener("mouseenter",(event)=>{boxed.style.background="radial-gradient(500px 500px at bottom,rgba(0, 255, 148, 0.2),white)";});
-icons[2].addEventListener("mouseover",(event)=>{boxed.style.background="radial-gradient(500px 500px at bottom,rgba(0, 255, 148, 0.2),white)";});
-icons[2].addEventListener("mouseout",(event)=>{boxed.style.background="white";});
-
-icons[3].addEventListener("mouseenter",(event)=>{boxed.style.background="radial-gradient(500px 500px at top,rgba(0, 255, 148, 0.2),white)";});
-icons[3].addEventListener("mouseover",(event)=>{boxed.style.background="radial-gradient(500px 500px at top,rgba(0, 255, 148, 0.2),white)";});
-icons[3].addEventListener("mouseout",(event)=>{boxed.style.background="white";});
-
-icons[4].addEventListener("mouseenter",(event)=>{boxed.style.background="radial-gradient(500px 500px at 50px bottom,rgba(0, 255, 148, 0.2),white)";});
-icons[4].addEventListener("mouseover",(event)=>{boxed.style.background="radial-gradient(500px 500px at 50px bottom,rgba(0, 255, 148, 0.2),white)";});
-icons[4].addEventListener("mouseout",(event)=>{boxed.style.background="white";});
-
-icons[5].addEventListener("mouseenter",(event)=>{boxed.style.background="radial-gradient(500px 500px at 50px top,rgba(0, 255, 148, 0.2),white)";});
-icons[5].addEventListener("mouseover",(event)=>{boxed.style.background="radial-gradient(500px 500px at 50px top,rgba(0, 255, 148, 0.2),white)";});
-icons[5].addEventListener("mouseout",(event)=>{boxed.style.background="white";});
-
+    icon[i].addEventListener("mouseenter",(event)=>{icon[j].style.animationPlayState="paused";});
+    icon[i].addEventListener("mouseover",(event)=>{icon[j].style.animationPlayState="paused";});
+    icon[i].addEventListener("mouseout",(event)=>{icon[j].style.animationPlayState="running";});
+  } 
+}
 //******************************************************************************************************************************************/
 
 
@@ -207,8 +182,6 @@ cards[1]=document.getElementById("c2");
 cards[2]=document.getElementById("c3");
 cards[3]=document.getElementById("c4");
 cards[4]=document.getElementById("c5");
-cards[5]=document.getElementById("c6");
-cards[6]=document.getElementById("c7");
 
 const di=[]
 di[0]=document.getElementById("di0");
@@ -216,8 +189,6 @@ di[1]=document.getElementById("di1");
 di[2]=document.getElementById("di2");
 di[3]=document.getElementById("di3");
 di[4]=document.getElementById("di4");
-di[5]=document.getElementById("di5");
-di[6]=document.getElementById("di6");
 
 const dat=[]
 dat[0]=document.getElementById("d0");
@@ -225,8 +196,6 @@ dat[1]=document.getElementById("d1");
 dat[2]=document.getElementById("d2");
 dat[3]=document.getElementById("d3");
 dat[4]=document.getElementById("d4");
-dat[5]=document.getElementById("d5");
-dat[6]=document.getElementById("d6");
 
 const iis=[]
 iis[0]=document.getElementById("im1"); 
@@ -246,16 +215,16 @@ for(let i=0;i<5;i++)
   cards[i].addEventListener("mouseover",(event)=>{iis[i].style.transform="translateX(-130px)";});
   cards[i].addEventListener("mouseout",(event)=>{iis[i].style.transform="translateX(0px)";});
 
-   if(i>0 && i<4)
-   {
-    cards[i].addEventListener("mouseenter",(event)=>{iis[i-1].style.transform="translateX(-170px)";});
-    cards[i].addEventListener("mouseover",(event)=>{iis[i-1].style.transform="translateX(-170px)";});
-    cards[i].addEventListener("mouseout",(event)=>{iis[i-1].style.transform="translateX(0px)";});   
-    
-    cards[i].addEventListener("mouseenter",(event)=>{iis[i+1].style.transform="translateX(170px)";});
-    cards[i].addEventListener("mouseover",(event)=>{iis[i+1].style.transform="translateX(170px)";});
-    cards[i].addEventListener("mouseout",(event)=>{iis[i+1].style.transform="translateX(0px)";});
-   }
+  if(i>0 && i<4)
+  {
+   cards[i].addEventListener("mouseenter",(event)=>{iis[i-1].style.transform="translateX(-170px)";});
+   cards[i].addEventListener("mouseover",(event)=>{iis[i-1].style.transform="translateX(-170px)";});
+   cards[i].addEventListener("mouseout",(event)=>{iis[i-1].style.transform="translateX(0px)";});   
+   
+   cards[i].addEventListener("mouseenter",(event)=>{iis[i+1].style.transform="translateX(170px)";});
+   cards[i].addEventListener("mouseover",(event)=>{iis[i+1].style.transform="translateX(170px)";});
+   cards[i].addEventListener("mouseout",(event)=>{iis[i+1].style.transform="translateX(0px)";});
+  }
   else if(i==0)
   {
     cards[i].addEventListener("mouseenter",(event)=>{iis[i+1].style.transform="translateX(170px)";});
