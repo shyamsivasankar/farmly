@@ -35,6 +35,7 @@ body
 {
     background-color: #FFFFFF;
     margin-bottom: 0px;
+    box-shadow: 0 4px 6px 0 rgba(45, 168, 132, 1);
 }
 
 .nav-link:visited
@@ -880,7 +881,7 @@ body
 {
     box-sizing: border-box;
     position: absolute;
-    width: 390px;
+    width: 600px;
     height: 316px;
     display: flex;
     flex-direction: row;
@@ -888,14 +889,15 @@ body
 
 .dat p
 {
-    width: 267px;
+    width: 400px;
     height: 218px;
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 17px;
     line-height: 30px;
     color: #000000;
+    opacity: 1;
 }
 
 .dataimg

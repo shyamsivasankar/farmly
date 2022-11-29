@@ -1,0 +1,101 @@
+
+
+  /* @media only screen and(min-width: 1440px)
+  {
+      .whatwedo .middiv1 .carousel
+      {
+          width: 520px;
+          height: 424px;
+      }
+  
+      .grad
+      {
+          width: 520px;
+          height: 424px;
+          background-size: 540px, 444px;
+      }
+  
+      .whatwedo .middiv1 .carousel-item
+      {
+          width: 520px;
+          height: 424px;
+      }
+  
+      .carousel-indicators
+      {
+          transform: translate(500px,-120px);
+      }
+  
+      .middiv2 
+      {
+          padding-left: 150px;
+          width: 770px;
+          height: 287px;
+      }
+  
+      .middiv2 p
+      {
+          padding-top: 30px;
+          font-size: 22px;
+          width: 630px;
+          height: 287px;
+      }
+  
+      .leftone
+      {
+          width: 590px;
+      }
+      
+      .lean
+      {
+          width: 300px;
+          height: 200px;
+      }
+  
+      .lean img
+      {
+          transform: translateY(7px);
+      }
+  
+      .whyus .l1
+      {
+        width: 516px;
+        height: 533.2px;
+      }
+  
+      .grad1
+      {
+          width: 516px;
+          height: 533.2px;
+          background-size: 540px, 444px;
+      }
+  
+      @keyframes animate {
+          0%,15%{
+            opacity: 0.2;
+            transform: translateX(480px) scale(0.7);
+            pointer-events: none;
+          }
+          20%, 35%{
+            opacity: 0.6;
+            transform: translateX(300px) scale(0.9);
+            pointer-events: none;
+          }
+          40%, 55%{
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(0px) scale(1.2);
+          }
+        
+          60%, 75%{
+            opacity: 0.6;
+            transform: translateX(-300px) scale(0.9);
+            pointer-events: none;
+          }
+          80%, 95%{
+            opacity: 0.2;
+            transform: translateX(-480px) scale(0.7);
+            pointer-events: none;
+          }
+        }
+  } */
