@@ -65,22 +65,22 @@ e.addEventListener("mouseout",(event)=>{five.style.borderBottomColor="white";});
 //Double Carousel Work
 //******************************************************************************************************************************************/
 
-const myCarouselTwo = document.querySelector('#demo2')
-const carouselTwo = bootstrap.Carousel.getOrCreateInstance(myCarouselTwo);
+// const myCarouselTwo = document.querySelector('#demo2')
+// const carouselTwo = bootstrap.Carousel.getOrCreateInstance(myCarouselTwo);
 
-const prevCarouselBtn = document.querySelector('.carousel-control-prev');
-const nextCarouselBtn = document.querySelector('.carousel-control-next');
+// const prevCarouselBtn = document.querySelector('.carousel-control-prev');
+// const nextCarouselBtn = document.querySelector('.carousel-control-next');
 
-prevCarouselBtn.addEventListener('click', prevCarousels);
-nextCarouselBtn.addEventListener('click', nextCarousels);
+// prevCarouselBtn.addEventListener('click', prevCarousels);
+// nextCarouselBtn.addEventListener('click', nextCarousels);
 
-function prevCarousels(){
-  carouselTwo.prev();
-}
+// function prevCarousels(){
+//   carouselTwo.prev();
+// }
 
-function nextCarousels(){
-  carouselTwo.next();
-}
+// function nextCarousels(){
+//   carouselTwo.next();
+// }
 
 // myCarouselOne.addEventListener('slide.bs.carousel', function(e) {
 //   var bsCarouselB = bootstrap.Carousel.getInstance(myCarouselTwo)
@@ -115,28 +115,28 @@ image[2] = document.getElementById("img3");
 image[3] = document.getElementById("img4");
 //******************************************************************************************************************************************/
 
-//how we do box heading hover color change
-//******************************************************************************************************************************************/
-box[0].addEventListener("mouseenter",(event)=>{head[0].style.color="#4E4E4E",image[0].style.transform="translateY(-25px)",image[0].style.transitionDuration="0.5s";});
-box[0].addEventListener("mouseover",(event)=>{ head[0].style.color="#4E4E4E",image[0].style.transform="translateY(-25px)",image[0].style.transitionDuration="0.5s";});
-box[0].addEventListener("mouseout",(event)=>{  head[0].style.color="#2DA884",image[0].style.transform="translateY(5px)",image[0].style.transitionDuration="0.5s";});
+// //how we do box heading hover color change
+// //******************************************************************************************************************************************/
+// box[0].addEventListener("mouseenter",(event)=>{head[0].style.color="#4E4E4E",image[0].style.transform="translateY(-25px)",image[0].style.transitionDuration="0.5s";});
+// box[0].addEventListener("mouseover",(event)=>{ head[0].style.color="#4E4E4E",image[0].style.transform="translateY(-25px)",image[0].style.transitionDuration="0.5s";});
+// box[0].addEventListener("mouseout",(event)=>{  head[0].style.color="#2DA884",image[0].style.transform="translateY(5px)",image[0].style.transitionDuration="0.5s";});
 
 
-box[1].addEventListener("mouseenter",(event)=>{head[1].style.color="#4E4E4E",image[1].style.transform="translateY(-25px)",image[1].style.transitionDuration="0.5s";});
-box[1].addEventListener("mouseover",(event)=>{ head[1].style.color="#4E4E4E",image[1].style.transform="translateY(-25px)",image[1].style.transitionDuration="0.5s";});
-box[1].addEventListener("mouseout",(event)=>{  head[1].style.color="#2DA884",image[1].style.transform="translateY(5px)",image[1].style.transitionDuration="0.5s";});
+// box[1].addEventListener("mouseenter",(event)=>{head[1].style.color="#4E4E4E",image[1].style.transform="translateY(-25px)",image[1].style.transitionDuration="0.5s";});
+// box[1].addEventListener("mouseover",(event)=>{ head[1].style.color="#4E4E4E",image[1].style.transform="translateY(-25px)",image[1].style.transitionDuration="0.5s";});
+// box[1].addEventListener("mouseout",(event)=>{  head[1].style.color="#2DA884",image[1].style.transform="translateY(5px)",image[1].style.transitionDuration="0.5s";});
 
 
-box[2].addEventListener("mouseenter",(event)=>{head[2].style.color="#4E4E4E",image[2].style.transform="translateY(-25px)",image[2].style.transitionDuration="0.5s";});
-box[2].addEventListener("mouseover",(event)=>{ head[2].style.color="#4E4E4E",image[2].style.transform="translateY(-25px)",image[2].style.transitionDuration="0.5s";});
-box[2].addEventListener("mouseout",(event)=>{  head[2].style.color="#2DA884",image[2].style.transform="translateY(5px)",image[2].style.transitionDuration="0.5s";});
+// box[2].addEventListener("mouseenter",(event)=>{head[2].style.color="#4E4E4E",image[2].style.transform="translateY(-25px)",image[2].style.transitionDuration="0.5s";});
+// box[2].addEventListener("mouseover",(event)=>{ head[2].style.color="#4E4E4E",image[2].style.transform="translateY(-25px)",image[2].style.transitionDuration="0.5s";});
+// box[2].addEventListener("mouseout",(event)=>{  head[2].style.color="#2DA884",image[2].style.transform="translateY(5px)",image[2].style.transitionDuration="0.5s";});
 
 
-box[3].addEventListener("mouseenter",(event)=>{head[3].style.color="#4E4E4E",image[3].style.transform="translateY(-25px)",image[3].style.transitionDuration="0.5s";});
-box[3].addEventListener("mouseover",(event)=>{ head[3].style.color="#4E4E4E",image[3].style.transform="translateY(-25px)",image[3].style.transitionDuration="0.5s";});
-box[3].addEventListener("mouseout",(event)=>{  head[3].style.color="#2DA884",image[3].style.transform="translateY(5px)",image[3].style.transitionDuration="0.5s";});
+// box[3].addEventListener("mouseenter",(event)=>{head[3].style.color="#4E4E4E",image[3].style.transform="translateY(-25px)",image[3].style.transitionDuration="0.5s";});
+// box[3].addEventListener("mouseover",(event)=>{ head[3].style.color="#4E4E4E",image[3].style.transform="translateY(-25px)",image[3].style.transitionDuration="0.5s";});
+// box[3].addEventListener("mouseout",(event)=>{  head[3].style.color="#2DA884",image[3].style.transform="translateY(5px)",image[3].style.transitionDuration="0.5s";});
 
-//******************************************************************************************************************************************/
+// //******************************************************************************************************************************************/
 
 
 //text box css
@@ -248,3 +248,22 @@ for(let i=0;i<5;i++)
 }
 
 //******************************************************************************************************************************************/
+const mediaQuery = window.matchMedia('(min-width: 1441px)')
+if (mediaQuery.matches) {
+  for(let i=0;i<4;i++)
+    {
+      box[i].addEventListener("mouseenter",(event)=>{head[i].style.color="#4E4E4E",image[i].style.transform="translateY(-38px)",image[i].style.transitionDuration="0.5s";});
+      box[i].addEventListener("mouseover",(event)=>{ head[i].style.color="#4E4E4E",image[i].style.transform="translateY(-38px)",image[i].style.transitionDuration="0.5s";});
+      box[i].addEventListener("mouseout",(event)=>{  head[i].style.color="#2DA884",image[i].style.transform="translateY(-8px)",image[i].style.transitionDuration="0.5s";});
+    }  
+}
+
+const mediaQuery1 = window.matchMedia('(max-width: 1440px)')
+if (mediaQuery1.matches) {
+  for(let i=0;i<4;i++)
+    {
+      box[i].addEventListener("mouseenter",(event)=>{head[i].style.color="#4E4E4E",image[i].style.transform="translateY(-25px)",image[i].style.transitionDuration="0.5s";});
+      box[i].addEventListener("mouseover",(event)=>{ head[i].style.color="#4E4E4E",image[i].style.transform="translateY(-25px)",image[i].style.transitionDuration="0.5s";});
+      box[i].addEventListener("mouseout",(event)=>{  head[i].style.color="#2DA884",image[i].style.transform="translateY(5px)",image[i].style.transitionDuration="0.5s";});
+    }  
+}
